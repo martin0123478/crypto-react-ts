@@ -15,6 +15,7 @@ body {
   background-size: cover;
   font-family: "Outfit", system-ui;
   min-height: 100vh;
+  font-size: 2rem;
 }
 
 .container {
@@ -43,4 +44,39 @@ body {
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+}
+
+.form,
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form label {
+  color: var(--back);
+}
+
+.form select {
+  background-color: #ECEBEB;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.form [type="submit"] {
+  background-color: var(--primary);
+  color: var(--back);
+  border: none;
+  padding: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2rem;
+
+}
+
+.form [type="submit"]:hover {
+  background-color: #0CB387;
 }
