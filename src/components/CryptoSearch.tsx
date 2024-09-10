@@ -8,6 +8,7 @@ import { ErrorMessage } from './ErrorMessage'
 
 export default function CryptoSearch() {
     const cryptoCurrencies = useCryptoStore((state) => state.cryptoCurrencies)
+    const fetchData = useCryptoStore((state) => state.fetchData)
     const [pair, setPair] = useState<Pair>({
         currency: '',
         cryptoCurrency: ''
@@ -25,9 +26,10 @@ export default function CryptoSearch() {
             setError('Todos los campos son obligatorios')
             return
         }
-        console.log('sin error')
+
         setError('')
         //consuktar api
+        fetchData(pair)
     }
     return (
         <form className="form" onSubmit={handleSubmit}>
