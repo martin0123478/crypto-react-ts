@@ -27,3 +27,4 @@ export const CryptoPriceSchema = z.object({
     LASTUPDATE: z.string()
 
 })
+

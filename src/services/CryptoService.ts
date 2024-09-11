@@ -17,6 +17,6 @@ export async function fetchCurrencyCryptoPrice(pair: Pair) {
 
     const result = CryptoPriceSchema.safeParse(DISPLAY[pair.cryptoCurrency][pair.currency])
     if (result.success) {
-        console.log(result.data)
+        return result.data
     }
 }
