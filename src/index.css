@@ -29,6 +29,7 @@ body {
   margin-top: 5rem;
   color: var(--white);
   line-height: .8;
+  text-align: center;
 }
 
 .app-title span {
